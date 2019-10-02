@@ -2,17 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import '../assets/stylesheets/application.scss';
+import App from './components/app';
 
-const Hello = ({ name }) => {
-  return (
-    <div>
-      Hello,
-      {name}
-    </div>
-  );
-};
-
+// render an instance of the component in the DOM
+// ReactDOM.render(<App />, document.querySelector('#root'));
 const root = document.getElementById('root');
 if (root) {
-  ReactDOM.render(<Hello name="World" />, root);
+  ReactDOM.render(<App />, root);
 }
